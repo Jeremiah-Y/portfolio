@@ -4,6 +4,8 @@ if (document.getElementById('my-work-link')) {
   })
 }
 
+
+//try lazy loading
 document.addEventListener("DOMContentLoaded", function() {
   var lazyloadImages = document.querySelectorAll("img.lazy");    
   var lazyloadThrottleTimeout;
