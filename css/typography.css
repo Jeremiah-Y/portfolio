@@ -23,6 +23,7 @@ body {
 }
 
 .subheader-text {
+  padding-top: 100px;
   font-size: 20px;
   font-weight: 700;
 }
