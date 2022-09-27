@@ -27,6 +27,7 @@ a.icon-link:hover {
 /* Navbar Styling */
 
 .navbar {
+  
   width: 100%;
   padding: 30px 50px;
   display: flex;
@@ -35,7 +36,8 @@ a.icon-link:hover {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: white
+  /* background-color: green; */
+  background-color: white 
 }
 
 .nav-title-link {

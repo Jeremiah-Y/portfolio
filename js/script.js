@@ -7,10 +7,13 @@ if (document.getElementById('my-work-link')) {
 
 
 
-
-
-
 //back-to-top button
+const navigationHeight = document.querySelector('body').offsetHeight;
+//console.log(navigationHeight);
+document.documentElement.style.setProperty('--scroll-padding', navigationHeight + "px");
+
+
+
 let mybutton = document.getElementById("float-button");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
@@ -21,10 +24,14 @@ function scrollFunction() {
   }
 }
 mybutton.addEventListener('click', () => {
-    //document.documentElement.scrollTop = 0
+    document.documentElement.scrollTop = 0
     //document.getElementById('main-content').scrollIntoView({behavior: "smooth"})
-    document.getElementById('main-content').scrollIntoView({behavior: "smooth"})
+    //document.getElementById('main-content').scrollIntoView({behavior: "smooth"})
   })
+
+
+
+
 
 // Get the button:
 // let mybutton = document.getElementById("float-button");
