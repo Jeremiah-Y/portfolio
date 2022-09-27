@@ -26,9 +26,6 @@ body {
 /* Main Page Layout */
 
 #main-content {
-  /* position: relative; */
-  
-  padding-top: 100px;
   margin: 225px 425px;
   display: flex;
   flex-direction: column;
