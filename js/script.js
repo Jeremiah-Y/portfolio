@@ -1,6 +1,6 @@
 if (document.getElementById('my-work-link')) {
   document.getElementById('my-work-link').addEventListener('click', () => {
-    document.getElementById('my-work-section').scrollIntoView({behavior: "smooth"})
+    document.getElementById('my-work-section').scrollIntoView({ behavior: "smooth" })
   })
 }
 
@@ -15,7 +15,7 @@ document.documentElement.style.setProperty('--scroll-padding', navigationHeight 
 
 
 let mybutton = document.getElementById("float-button");
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -24,10 +24,10 @@ function scrollFunction() {
   }
 }
 mybutton.addEventListener('click', () => {
-    document.documentElement.scrollTop = 0
-    //document.getElementById('main-content').scrollIntoView({behavior: "smooth"})
-    //document.getElementById('main-content').scrollIntoView({behavior: "smooth"})
-  })
+  document.documentElement.scrollTop = 0
+  //document.getElementById('main-content').scrollIntoView({behavior: "smooth"})
+  //document.getElementById('main-content').scrollIntoView({behavior: "smooth"})
+})
 
 
 
@@ -36,7 +36,7 @@ var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
@@ -47,5 +47,18 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+
+
+//toggle show 小车
+function toggleSmallCars() {
+  var x = document.getElementsByClassName('nonSmallCars');
+  for (var i = 0; i < x.length; i++) {
+    if (x[i].style.display === "none") {
+      x[i].style.display = "block";
+    } else {
+      x[i].style.display = "none";
+    }
+  }
+}
 
 

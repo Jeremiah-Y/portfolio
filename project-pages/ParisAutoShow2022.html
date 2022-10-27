@@ -43,24 +43,23 @@
     <a class="button">
       <span class="button-text">^ TOP</span>
     </a>
+
   </div>
   <!-- NAVBAR -->
   <div class="navbar">
     <a class="nav-title-link" href="../index.html">
-      <!-- 
-          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
-
-          (this should be the same across all pages)
-         -->
+     
       <span class="nav-title">Home 主页</span>
-      <!-- 
-          TODO - Change the email after 'mailto:' to your email address for contact 
-        
-          (this should be the same across all pages)
-        -->
-      <a class="button" href="mailto:junhang.yu@outlook.com">
-        <span class="button-text">Contact Me</span>
-      </a>
+  
+      
+    </a>
+
+    <a class="button" onclick="toggleSmallCars()">
+      <span class="button-text">只显示小车</span>
+    </a>
+
+    <a class="button" href="mailto:junhang.yu@outlook.com">
+      <span class="button-text">Contact Me</span>
     </a>
   </div>
 
@@ -106,34 +105,30 @@
       </div>
 
 
-
       <image class="project-header-image" src="../assets/images/mondialDeLAuto2022/cover.jpeg">
-        <span class="image-caption"></span>
+
     </div>
 
-    <!-- PROJECT DETAILS -->
-    <!-- 
-        TODO
+  
+    <div class="nonSmallCars">
+      <div id="project-details">
 
-        - Change the 'subheader-text' to whatever header you want for project details
-        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
-      -->
-    <div id="project-details">
-      <div class="subheader-text">序言</div>
-      <div class="project-details-content">
+        <div class="subheader-text">序言</div>
+        <div class="project-details-content">
 
-        <div class="body-text">
-          今年的巴黎车展受疫情和经济低迷影响，相比2018年的巅峰时期规模缩减到了一半不到，曾经整个凡尔赛门博览园7个展馆全开的盛况不再，今年只有3个展馆。德日韩等欧洲市场的主流车企均缺席，车展最后只剩下了法国和中国两国车企的对角戏。
+          <div class="body-text">
+            今年的巴黎车展受疫情和经济低迷影响，相比2018年的巅峰时期规模缩减到了一半不到，曾经整个凡尔赛门博览园7个展馆全开的盛况不再，今年只有3个展馆。德日韩等欧洲市场的主流车企均缺席，车展最后只剩下了法国和中国两国车企的对角戏。
+          </div>
+          <div class="body-text">
+            尤其是中国车企的表现，让法国媒体和消费者着实钦佩。我的一位法国同事同我说，他在看完车展的感受是，<strong>曾经在法国人心中不过就是代工厂的中国，如今却成为了创新领域的领导者，</strong>这样的变化让他非常震撼，也很羡慕。
+          </div>
+          <div class="body-text">
+            这篇网页里汇集了我在车展两天所拍摄的照片和视频，也有一些简短的文字。时间仓促，暂时内容还是流水账的形式，在近期我会持续更新，在充实内容的同时，也会做一些小型专栏的提取和整理，以便有目的性的浏览。
+          </div>
+
+
+
         </div>
-        <div class="body-text">
-          尤其是中国车企的表现，让法国媒体和消费者着实钦佩。我的一位法国同事同我说，他在看完车展的感受是，<strong>曾经在法国人心中不过就是代工厂的中国，如今却成为了创新领域的领导者，</strong>这样的变化让他非常震撼，也很羡慕。
-        </div>
-        <div class="body-text">
-          这篇网页里汇集了我在车展两天所拍摄的照片和视频，也有一些简短的文字。时间仓促，暂时内容还是流水账的形式，在近期我会持续更新，在充实内容的同时，也会做一些小型专栏的提取和整理，以便有目的性的浏览。</div>
-
-
-
-
 
       </div>
     </div>
@@ -141,99 +136,100 @@
     <!-- IMAGE GALLERY -->
     <div id="project-gallery">
       <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-      <div class="subheader-text">一些车展概况</div>
-      <div class="project-gallery-content">
+      <div class="nonSmallCars">
+        <div class="subheader-text">一些车展概况</div>
+        <div class="project-gallery-content">
 
 
-        <div class="gallery-image-container">
-          <div class="body-text">以下是本次巴黎车展参展车企名单</div>
-          <img src="../assets/images/mondialDeLAuto2022/exhibitiantList.jpeg" class="gallery-image">
-          <span class="image-caption">德日主流车企全面缺席，法国和中国车企成为此次车展主流。</span>
+          <div class="gallery-image-container">
+            <div class="body-text">以下是本次巴黎车展参展车企名单</div>
+            <img src="../assets/images/mondialDeLAuto2022/exhibitiantList.jpeg" class="gallery-image">
+            <span class="image-caption">德日主流车企全面缺席，法国和中国车企成为此次车展主流。</span>
+          </div>
+
+
+          <div style="position: relative; padding: 35% 50%;">
+            <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+              src="https://player.bilibili.com/player.html?aid=431801318&bvid=BV1VG411L7tX&cid=870211696&page=1&as_wide=1&high_quality=1&danmaku=0"
+              frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+
+
+          <div style="position: relative; padding: 35% 50%;">
+            <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+              src="https://player.bilibili.com/player.html?aid=261785435&bvid=BV19e411V7EP&cid=870210088&page=1&as_wide=1&high_quality=1&danmaku=0"
+              frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+          <div class="body-text"></div>
+
+          <div class="body-text"></div>
+
         </div>
-
-
-        <div style="position: relative; padding: 35% 50%;">
-          <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
-            src="https://player.bilibili.com/player.html?aid=431801318&bvid=BV1VG411L7tX&cid=870211696&page=1&as_wide=1&high_quality=1&danmaku=0"
-            frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
-        </div>
-
-
-        <div style="position: relative; padding: 35% 50%;">
-          <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
-            src="https://player.bilibili.com/player.html?aid=261785435&bvid=BV19e411V7EP&cid=870210088&page=1&as_wide=1&high_quality=1&danmaku=0"
-            frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
-        </div>
-        <div class="body-text"></div>
-
-        <div class="body-text"></div>
-
       </div>
-
 
 
 
       <div class="subheader-text" id="renault">RENAULT雷诺</div>
       <div class="project-gallery-content">
-
-        <div class="gallery-image-container">
-          <div class="body-text">雷诺带来了四辆概念车，其中Scenic Vision，4Ever Trophy和R5 Turbo
-            3E为首发；量产车上比较受关注的是最新的纯电梅甘娜。</div>
-          <img src="../assets/images/mondialDeLAuto2022/IMG_20221020_114042.jpg" class="gallery-image">
-          <span class="image-caption">雷诺展台。</span>
-        </div>
-
-
-        <div style="position: relative; padding: 35% 50%;">
-          <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
-            src="https://player.bilibili.com/player.html?aid=304365324&bvid=BV1eP411A7bi&cid=8702452816&page=1&as_wide=1&high_quality=1&danmaku=0"
-            frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
-        </div>
-
-
-        <div class="gallery-image-container">
-          <div class="subsubheader-text">SCENIC VISION 概念车</div>
-          <img src="../assets/images/mondialDeLAuto2022/290A2375.jpg" class="gallery-image">
-          <span class="image-caption"></span>
-        </div>
-        <div class="gallery-image-container">
-          <img src="../assets/images/mondialDeLAuto2022/290A2376.jpg" class="gallery-image">
-          <span class="image-caption"></span>
-        </div>
-        <div class="gallery-image-container">
-          <img src="../assets/images/mondialDeLAuto2022/290A2378.jpg" class="gallery-image">
-          <span class="image-caption"></span>
-        </div>
-        <div class="gallery-image-container">
-          <img src="../assets/images/mondialDeLAuto2022/290A2379.jpg" class="gallery-image">
-          <span class="image-caption"></span>
-        </div>
-        <div class="gallery-image-container">
-          <img src="../assets/images/mondialDeLAuto2022/290A2382.jpg" class="gallery-image">
-          <span class="image-caption"></span>
-        </div>
-        <div class="gallery-image-container">
-          <img src="../assets/images/mondialDeLAuto2022/290A2387.jpg" class="gallery-image">
-          <span class="image-caption"></span>
-        </div>
-        <div class="gallery-image-container">
-          <img src="../assets/images/mondialDeLAuto2022/290A2386.jpg" class="gallery-image">
-          <span class="image-caption"></span>
-        </div>
-
-
-        <div class="gallery-image-container">
-          <div class="subsubheader-text">历史上的Scenic</div>
-          <div class="body-text">1996年第一代基于梅甘娜平台的Scenic风景亮相，开启广受欧洲市场欢迎的minivan/mini
-            MPV的新风，并在之后启发了诸如雪铁龙毕加索、欧宝赛飞利Zafira、高尔夫嘉旅等同样由轿车平台打造的小型MPV。自第二代开始，Scenic发展出了5座Scenic与7座Grand
-            Scenic两个版本。目前是第四代。从这次的概念车比例来看，几乎已经脱离了MPV的范畴，修长的车头让整车更倾向于SUV。设计师很无奈地说，“毕竟SUV是这个阶段的消费者喜欢的”，毕竟，梅甘娜也开始SUV化了。
+        <div class="nonSmallCars">
+          <div class="gallery-image-container">
+            <div class="body-text">雷诺带来了四辆概念车，其中Scenic Vision，4Ever Trophy和R5 Turbo
+              3E为首发；量产车上比较受关注的是最新的纯电梅甘娜。</div>
+            <img src="../assets/images/mondialDeLAuto2022/IMG_20221020_114042.jpg" class="gallery-image">
+            <span class="image-caption">雷诺展台。</span>
           </div>
-          <img src="../assets/images/mondialDeLAuto2022/scenicHist.png" class="gallery-image">
-          <span class="image-caption">图源：<a
-              href=" https://www.hibridosyelectricos.com/articulo/mercado/vuelve-renault-scenic-cambiara-formato-monovolumen-suv-electrico/20220228085859055011.html">网络</a></span>
+
+
+          <div style="position: relative; padding: 35% 50%;">
+            <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+              src="https://player.bilibili.com/player.html?aid=304365324&bvid=BV1eP411A7bi&cid=8702452816&page=1&as_wide=1&high_quality=1&danmaku=0"
+              frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
+          </div>
+
+
+          <div class="gallery-image-container">
+            <div class="subsubheader-text">SCENIC VISION 概念车</div>
+            <img src="../assets/images/mondialDeLAuto2022/290A2375.jpg" class="gallery-image">
+            <span class="image-caption"></span>
+          </div>
+          <div class="gallery-image-container">
+            <img src="../assets/images/mondialDeLAuto2022/290A2376.jpg" class="gallery-image">
+            <span class="image-caption"></span>
+          </div>
+          <div class="gallery-image-container">
+            <img src="../assets/images/mondialDeLAuto2022/290A2378.jpg" class="gallery-image">
+            <span class="image-caption"></span>
+          </div>
+          <div class="gallery-image-container">
+            <img src="../assets/images/mondialDeLAuto2022/290A2379.jpg" class="gallery-image">
+            <span class="image-caption"></span>
+          </div>
+          <div class="gallery-image-container">
+            <img src="../assets/images/mondialDeLAuto2022/290A2382.jpg" class="gallery-image">
+            <span class="image-caption"></span>
+          </div>
+          <div class="gallery-image-container">
+            <img src="../assets/images/mondialDeLAuto2022/290A2387.jpg" class="gallery-image">
+            <span class="image-caption"></span>
+          </div>
+          <div class="gallery-image-container">
+            <img src="../assets/images/mondialDeLAuto2022/290A2386.jpg" class="gallery-image">
+            <span class="image-caption"></span>
+          </div>
+
+
+          <div class="gallery-image-container">
+            <div class="subsubheader-text">历史上的Scenic</div>
+            <div class="body-text">1996年第一代基于梅甘娜平台的Scenic风景亮相，开启广受欧洲市场欢迎的minivan/mini
+              MPV的新风，并在之后启发了诸如雪铁龙毕加索、欧宝赛飞利Zafira、高尔夫嘉旅等同样由轿车平台打造的小型MPV。自第二代开始，Scenic发展出了5座Scenic与7座Grand
+              Scenic两个版本。目前是第四代。从这次的概念车比例来看，几乎已经脱离了MPV的范畴，修长的车头让整车更倾向于SUV。设计师很无奈地说，“毕竟SUV是这个阶段的消费者喜欢的”，毕竟，梅甘娜也开始SUV化了。
+            </div>
+            <img src="../assets/images/mondialDeLAuto2022/scenicHist.png" class="gallery-image">
+            <span class="image-caption">图源：<a
+                href=" https://www.hibridosyelectricos.com/articulo/mercado/vuelve-renault-scenic-cambiara-formato-monovolumen-suv-electrico/20220228085859055011.html">网络</a></span>
+          </div>
+
         </div>
-
-
 
 
 
